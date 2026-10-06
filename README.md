@@ -1,2 +1,2 @@
 # ong-hipotetica-estudo
-um site de uma ong hipotetica para estudo
+Projeto de estudo de front-end desenvolvido com HTML, CSS e JavaScript.
