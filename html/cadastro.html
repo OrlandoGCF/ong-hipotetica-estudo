@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="../css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-BR">
+<title>ONG hipotética</title>
+<div class="container">
+    <header>
+            
+            <h1>ONG hipotética</h1>
+
+            <nav >
+                <input type="checkbox" id="menu-check" class="menu-check">
+
+                <label for="menu-check" class="menu-toggle" aria-label="Abrir menu">
+                    ☰
+                </label>
+                <ul  class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="projetos.html">Projetos</a>
+                        <ul class="submenu">
+                            <li><a href="#">Projeto 1</a></li>
+                            <li><a href="#">Projeto 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
+        </header>
+    <main>
+        <section>
+            <h2>Componentes de feedback</h2>
+
+            
+
+            <h3>Badges</h3>
+
+            <p>
+                <span class="badge badge-projeto">
+                    Projeto
+                </span>
+
+                <span class="badge badge-ativo">
+                    Ativo
+                </span>
+
+                <span class="badge badge-pendente">
+                    Pendente
+                </span>
+            </p>
+
+
+            
+
+            <h3>Alertas</h3>
+
+            <div class="alerta alerta-sucesso">
+                Cadastro realizado com sucesso!
+            </div>
+
+            <div class="alerta alerta-erro">
+                Não foi possível realizar o cadastro.
+            </div>
+
+            <div class="alerta alerta-aviso">
+                Este projeto está recebendo novos voluntários.
+            </div>
+
+
+           
+
+            <h3>Toast</h3>
+
+            <div class="toast">
+                Seu cadastro foi enviado com sucesso.
+            </div>
+
+
+            
+
+            <h3>Modal</h3>
+
+            <div class="modal">
+                <h2>Confirmação</h2>
+
+                <p>
+                    Deseja participar deste projeto como voluntário?
+                </p>
+
+                <button type="button">
+                    Confirmar
+                </button>
+            </div>
+
+        </section>
+        
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required class="sucesso">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required class="erro">
+
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" pattern="[0-9]{3}\.?[0-9]{3}\.?[0-9]{3}-?[0-9]{2}" required placeholder="000.000.000-00" title="Formato: 000.000.000-00">
+
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone" pattern="\(?[0-9]{2}\)?[ ]?[0-9]{4,5}-?[0-9]{4}" placeholder="(00) 00000-0000" title="Formato: (00) 00000-0000">
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereço</legend>
+
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" pattern="[0-9]{5}-?[0-9]{3}" required placeholder="00000-000" title="Formato: 00000-000">
+                
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco">
+
+                <label for="complemento">Complemento:</label>
+                <input type="text" id="complemento" name="complemento">
+
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    
+                </select>
+            </fieldset>
+
+            <button type="submit">Cadastrar</button>
+            <button type="button" disabled>Cancelar</button>
+        </form>
+    </main>
+</div>
